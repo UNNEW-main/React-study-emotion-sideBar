@@ -1,4 +1,4 @@
-Side Bar
+<h1>Side Bar</h1> <br>
 emotion에 익숙해지기 위해 개발
 
 간단한 메뉴 기능
