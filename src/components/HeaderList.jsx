@@ -7,6 +7,7 @@ const Li = styled.li`
   text-align: center;
   height: 50px;
   padding: 30px;
+
   color: ${theme.subTextColor};
   font-size: ${theme.fontSize};
 `
