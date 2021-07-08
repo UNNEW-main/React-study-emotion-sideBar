@@ -1,0 +1,16 @@
+{
+  "MenuList": [
+    {
+      "id": "1",
+      "list" : ["Apex Legend","MineCraft"]
+    },
+    {
+      "id": "2",
+      "list": ["HTML & CSS","JS","React"]
+    },
+    {
+      "id": "3",
+      "list": ["Practice Guitar","Drinking alcohol"]
+    }
+  ]
+}
