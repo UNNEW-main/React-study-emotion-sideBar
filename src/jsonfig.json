@@ -1,11 +1,6 @@
 {
-  "homepage": "https://unnew-main.github.io/React-study-emotion-sideBar/",
   "compilerOptions": {
     "baseUrl": "src"
   },
-  "include": ["src"],
-  "scipts":{
-    "predeploy":"npm run build",
-    "deploy": "gh-pages -d build"
-  }
+  "include": ["src"]
 }
