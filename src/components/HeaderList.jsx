@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
 import theme from '../themes/theme';
 import menuListData from '../allData/menuListData';
@@ -10,7 +10,7 @@ const Li = styled.li`
 
   color: ${theme.subTextColor};
   font-size: ${theme.fontSize};
-`
+`;
 const Ul = styled.ul`
   padding: 0;
   margin: 10px;
@@ -18,33 +18,25 @@ const Ul = styled.ul`
   position: relative;
   width: 100%;
   height: 520px;
-  list-style : none;
+  list-style: none;
   border-radius: 15px;
   background-color: ${theme.subColor};
-`
+`;
 
-const HeaderList =({page})=>{
+const HeaderList = ({ page }) => {
   const [subMenu, setSubMenu] = useState([]);
 
-  useEffect(()=>{
-    setSubMenu(menuListData.MenuList.filter(data => data.id === page))
-  }, [page])
+  useEffect(() => {
+    setSubMenu(menuListData.MenuList.filter((data) => data.id === page));
+  }, [page]);
 
-  const printList=(data)=>{
-    const result=[];
-    for(let i=0;i<data.list.length;i++)
+  const printList = (data) => {
+    const result = [];
+    for (let i = 0; i < data.list.length; i++)
       result.push(<Li key={i}>{data.list[i]}</Li>);
     return result;
-  }
+  };
 
-  return (
-    <Ul>
-      {
-        subMenu.map((data)=>(
-          printList(data)
-        ))
-      }
-    </Ul>
-  );
-}
+  return <Ul>{subMenu.map((data) => printList(data))}</Ul>;
+};
 export default HeaderList;
