@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
-import theme from '../themes/theme';
-import menuListData from '../allData/menuListData';
+import theme from '../constants/theme';
+import menuListData from '../dummy/menuListData';
 
 const Li = styled.li`
   text-align: center;

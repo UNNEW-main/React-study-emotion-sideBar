@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from '@emotion/styled';
-import theme from '../themes/theme';
+import theme from '../constants/theme';
 import HeaderList from './HeaderList';
 
 const Li = styled.li`
